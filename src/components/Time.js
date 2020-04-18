@@ -5,10 +5,10 @@ const convertToStringWithTwoDigits = (number) => {
 }
 
 const showTime = (seconds) => {
-  const timerSeconds = convertToStringWithTwoDigits(seconds % 60); // remaining seconds 
-  const timerMinutes = convertToStringWithTwoDigits(Math.floor(seconds / 60) % 60); // remaining minutes
-  const timerHours = convertToStringWithTwoDigits(Math.floor(seconds / 60 / 60)); // number of hours
-  return `${timerHours}:${timerMinutes}:${timerSeconds}`;
+  const showSeconds = convertToStringWithTwoDigits(seconds % 60); // remaining seconds 
+  const showMinutes = convertToStringWithTwoDigits(Math.floor(seconds / 60) % 60); // remaining minutes
+  const showHours = convertToStringWithTwoDigits(Math.floor(seconds / 60 / 60)); // number of hours
+  return `${showHours}:${showMinutes}:${showSeconds}`;
 }
 
 const Time = (props) => {
