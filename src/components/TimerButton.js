@@ -1,9 +1,9 @@
 import React from 'react';
 
 const TimerButton = (props) => {
-  const { children } = props;
+  const { action, children } = props;
   return (
-    <button>
+    <button onClick={action}>
       { children }
     </button>
   )
